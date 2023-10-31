@@ -1,11 +1,14 @@
-const PLAYER_LIVES = 6
+const PLAYER_LIVES = 7
 const CARDS_COUNT = 16
 
 const section = document.querySelector(".cards-container")
 const playerLivesCount = document.querySelector(".player-lives-count")
 const livesContainer = document.querySelector(".lives")
+const restartButton = document.querySelector(".restart-button")
 
 playerLivesCount.textContent = PLAYER_LIVES
+
+restartButton.addEventListener("click", () => restart("Go again."))
 
 const getCardsData = () => {
     return [

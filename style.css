@@ -7,11 +7,32 @@
 body {
     height: 100vh;
     background-color: #CEEAF7;
+
+}
+
+main {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+}
+
+.header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.restart-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.restart-button:active {
+    transform: translateY(2px);
 }
 
 .lives {
@@ -45,6 +66,8 @@ body {
 .back {
     background-color: white;
     backface-visibility: hidden;
+    background: url("./images/mark.jpg") white;
+    background-size: contain;
 }
 
 .face {
